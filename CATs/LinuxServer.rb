@@ -48,7 +48,7 @@ parameter "param_servertype" do
   type "list"
   description "Type of Linux server to launch"
   allowed_values "CentOS", 
-    "Ubuntu"
+    "Ubuntu", "RHEL7"
   default "Ubuntu"
 end
 
@@ -171,7 +171,9 @@ mapping "map_mci" do {
     "CentOS_mci" => "RightImage_CentOS_6.6_x64_v14.2",
     "CentOS_mci_rev" => "24",
     "Ubuntu_mci" => "RightImage_Ubuntu_14.04_x64_v14.2",
-    "Ubuntu_mci_rev" => "11"
+    "Ubuntu_mci_rev" => "11",
+    "RHEL7_mci" => "RightImage_RHEL_7.1_x64_v14.2_HVM_EBS",
+    "RHEL7_mci_rev" => "4",
   }
 } end
 
